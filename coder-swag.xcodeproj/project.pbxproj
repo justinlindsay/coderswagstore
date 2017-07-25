@@ -13,6 +13,8 @@
 		F66FAD8C1F27AC800017F758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66FAD8B1F27AC800017F758 /* Assets.xcassets */; };
 		F66FAD8F1F27AC800017F758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66FAD8D1F27AC800017F758 /* LaunchScreen.storyboard */; };
 		F66FAD9A1F27B1DA0017F758 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FAD991F27B1DA0017F758 /* CategoryCell.swift */; };
+		F66FAD9C1F27B65D0017F758 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FAD9B1F27B65D0017F758 /* Category.swift */; };
+		F66FAD9F1F27B7E70017F758 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FAD9E1F27B7E70017F758 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F66FAD8E1F27AC800017F758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F66FAD901F27AC800017F758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F66FAD991F27B1DA0017F758 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		F66FAD9B1F27B65D0017F758 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F66FAD9E1F27B7E70017F758 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,9 @@
 		F66FAD831F27AC800017F758 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
-				F66FAD971F27B16D0017F758 /* Model */,
+				F66FAD9D1F27B7D10017F758 /* Services */,
 				F66FAD981F27B1720017F758 /* View */,
+				F66FAD971F27B16D0017F758 /* Model */,
 				F66FAD961F27B1660017F758 /* Controller */,
 				F66FAD841F27AC800017F758 /* AppDelegate.swift */,
 				F66FAD881F27AC800017F758 /* Main.storyboard */,
@@ -79,6 +84,7 @@
 		F66FAD971F27B16D0017F758 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F66FAD9B1F27B65D0017F758 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				F66FAD991F27B1DA0017F758 /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F66FAD9D1F27B7D10017F758 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F66FAD9E1F27B7E70017F758 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,8 @@
 				F66FAD871F27AC800017F758 /* CategoriesVC.swift in Sources */,
 				F66FAD851F27AC800017F758 /* AppDelegate.swift in Sources */,
 				F66FAD9A1F27B1DA0017F758 /* CategoryCell.swift in Sources */,
+				F66FAD9C1F27B65D0017F758 /* Category.swift in Sources */,
+				F66FAD9F1F27B7E70017F758 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
