@@ -88,23 +88,23 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="pMx-7b-7NA"/>
                     <connections>
                         <outlet property="categoryTable" destination="FNi-sC-g7W" id="Oq1-nd-e7X"/>
-                        <segue destination="LPH-Mj-5FY" kind="show" id="NFZ-7F-Op8"/>
+                        <segue destination="LPH-Mj-5FY" kind="show" identifier="ProductVC" id="NFZ-7F-Op8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="364" y="36.431784107946029"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductVC-->
         <scene sceneID="4oh-DB-bD0">
             <objects>
-                <viewController id="LPH-Mj-5FY" sceneMemberID="viewController">
+                <viewController id="LPH-Mj-5FY" customClass="ProductVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WXG-Gw-czu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqw-As-GDT">
-                                <rect key="frame" x="20" y="94" width="166" height="23.666666666666671"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqw-As-GDT">
+                                <rect key="frame" x="20" y="94" width="166" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23.670000000000002" id="Xk4-TE-0hH"/>
                                     <constraint firstAttribute="width" constant="166" id="sw9-l4-vhJ"/>
@@ -123,7 +123,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="83m-GV-bS5" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="83m-GV-bS5" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="255"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -186,6 +186,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NaK-yV-SBv"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="ayj-rH-mfb" id="oTp-aS-u9K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnO-Pn-vAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
